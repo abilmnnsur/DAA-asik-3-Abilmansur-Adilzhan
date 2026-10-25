@@ -1,0 +1,10 @@
+﻿Python 3.14.2 | Windows-11-10.0.26200-SP0
+CPU: Intel64 Family 6 Model 186 Stepping 2, GenuineIntel | logical cores: 12
+seed = 12345 | timer = time.perf_counter | repeats = 5 | 1 warm-up run per method
+timed: only the algorithm call. NOT timed: graph generation, request building, JSON parsing, I/O
+n=1000 m=5000 kruskal: runs=[0.0026, 0.0026, 0.0024, 0.0021, 0.0021] median=0.0024s
+n=1000 m=5000 prim: runs=[0.003, 0.0029, 0.003, 0.0029, 0.0029] median=0.0029s
+n=10000 m=50000 kruskal: runs=[0.0318, 0.0399, 0.0351, 0.0362, 0.0372] median=0.0362s
+n=10000 m=50000 prim: runs=[0.1851, 0.1426, 0.1054, 0.1006, 0.183] median=0.1426s
+n=100000 m=250000 kruskal: runs=[0.3398, 0.3257, 0.3215, 0.3416, 0.4079] median=0.3398s
+n=100000 m=250000 prim: runs=[0.6624, 0.9427, 0.8606, 0.778, 0.7549] median=0.7780s
